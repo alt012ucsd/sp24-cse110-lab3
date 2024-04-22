@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
+
 <head>
+    <link rel="stylesheet" href="mystyle.css">
     <meta charset="UTF-8">
     <meta name="author" content="Andy Tran">
     <link rel="icon" type="image/png" href="cat.png"/>
@@ -9,7 +13,7 @@
 </head>
   
 <body>
-<h1>Travel Adviser App Brainstorm</h1>
+<h1 style="color:blue;text-align:center;">Travel Adviser App Brainstorm</h1>
 <details>
     <Summary>Meeting Summary</Summary>
     <p>This is a meeting minutes about our first meeting<br>
@@ -19,14 +23,12 @@
     </p>
 </details>
 
-  
-
-<img src="travel.jpg" alt="Tavel" width="500" height="200">
+<img src="travel.jpg" alt="Travel" width="500" height="200">
   <main>
-      <h2> Meeting Contents</h2>
+      <h2 id="meetingcontents">Meeting Contents</h2>
       <div class="app-functions">
         <section>
-          <h3>App Functions</h3>
+          <h3 id="appfunctions">App Functions</h3>
           <ol>
               <li><strong>Recommends attractions</strong> and places of interest.</li>
               <li>Can <strong>filter for specific interests</strong>.</li>
@@ -37,8 +39,8 @@
       <section>
         <h3>Meeting Participants</h3>
           <ul>
-              <li>Participant <i>1</i></li>
-              <li>Participant <i>2</i></li>
+              <li id="participant1">Participant <i>1</i></li>
+              <li id="participant2">Participant <i>2</i></li>
               <li>Participant <i>3</i></li>
           </ul>
           
@@ -113,6 +115,34 @@
         <li>Using <b>MongoDB</b>, <b>Express</b>, <b>React</b>, and <b>Node</b></li>
         <li>Implement Google, and Yelp APIs</li>
     </ul>
+</div>
+
+<style>
+  :root{
+    --primary-color: #007bff;
+  }
+
+  .box {
+    width: 200px;
+    height: 200px;
+    background-color: var(--primary-color, blue);
+    margin: 20px;
+  }
+  .box2 {
+    width: 5.292cm;
+    height: 59.2mm;
+    background-color: var(--primary-color, blue);
+    margin: 0.0104in;
+  }
+</style>
+<div class="container">
+  <div class="box"></div>
+  <div class="box2"></div>
+  <div class="box3"></div>
+</div>
+<div class="container2">
+  <div class="box4">Box</div>
+  <div class="box5"></div>
 </div>
 
   <nav>
