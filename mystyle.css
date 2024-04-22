@@ -42,11 +42,11 @@ h2{
 }
 
 #participant1{
-    color: color(colorspace pink plum purple)
+    color: color(red pink plum purple)
 }
 
 #participant2{
-    color: color-mix(in lch, plum, pink)
+    color: color-mix(red, plum, pink)
 }
 
 .box3 {
@@ -131,9 +131,9 @@ h2{
     margin-bottom: 0;
   }
 
-  h1 {
+  .box {
     background-color: red;
-  & h2 {
+    :hover{
     background-color: green;
   }
 }
