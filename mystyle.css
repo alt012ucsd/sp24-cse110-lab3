@@ -1,0 +1,144 @@
+/* This is my style sheet */
+
+
+body {
+    background-color: lightblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+[body|="top"]{
+    background: yellow;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-start: col-start 2;
+    grid-template-rows: auto;
+}
+
+h3 {
+    color: navy;
+    margin-left: 20px;
+}
+
+h2{
+    color: #FFF;
+}
+
+#appfunctions {
+    color: hsl(189, 100%, 50%)
+}
+
+#meetingcontents {
+    color: rgb(100, 100, 100)
+}
+
+#participant1{
+    color: color(colorspace pink plum purple)
+}
+
+#participant2{
+    color: color-mix(in lch, plum, pink)
+}
+
+.box3 {
+    width: 200px;
+    height: 200px;
+    min-width: 200px;
+    max-width: 200px;
+    background-color: var(--primary-color, blue);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-style: solid;
+    border-color: salmon;
+    border-width: 5px;
+    border-radius: 1px;
+    display: block;
+    position: relative;
+  }
+
+  .box4 {
+    width: 200px;
+    height: 200px;
+    background-color: var(--primary-color, blue);
+    margin: 20px 20px 20px 20px;
+    text-align: center;
+    text-decoration: underline;
+    display: none;
+    position: static;
+  }
+
+  button:hover{
+    color: orange;
+  }
+
+  .box4:hover{
+    color: orange;
+  }
+  
+  button:active{
+    color: red;
+  }
+  .box5 {
+    width: 200px;
+    height: 200px;
+    background-color: var(--primary-color, blue);
+    margin: auto;
+  }
+
+  *.warning{
+    color: red;
+  }
+
+  span {
+    border: red 2px solid;
+  }
+  div {
+    border: red 2px solid;
+  }
+
+  div p {
+    background-color: yellow;
+  }
+
+  div > p {
+    background-color: yellow;
+  }
+
+  div ~ p {
+    background-color: yellow;
+  }
+
+  div + p {
+    background-color: yellow;
+  }
+
+  div.class{
+    background-color: yellow;
+  }
+
+  h1:has(+p){
+    margin-bottom: 0;
+  }
+
+  h1 {
+    background-color: red;
+  & h2 {
+    background-color: green;
+  }
+}
+  @media (max-width: 1250px){
+    body{
+        font-size: 16px;
+    }
+  }
