@@ -42,11 +42,11 @@ h2{
 }
 
 #participant1{
-    color: color(red pink plum purple)
+    color: color(from green srgb r g b / 0.5)
 }
 
 #participant2{
-    color: color-mix(red, plum, pink)
+    color: color-mix(in srgb, #34c9eb 20%, white);
 }
 
 .box3 {
@@ -65,6 +65,10 @@ h2{
     border-radius: 1px;
     display: block;
     position: relative;
+
+    & childrule {
+        background-color: red;
+    }
   }
 
   .box4 {
@@ -131,12 +135,8 @@ h2{
     margin-bottom: 0;
   }
 
-  .box {
-    background-color: red;
-    :hover{
-    background-color: green;
-  }
-}
+  
+ 
   @media (max-width: 1250px){
     body{
         font-size: 16px;
